@@ -2,7 +2,8 @@ import * as WebSocket from 'ws';
 import { PlayerKey } from './players';
 import { registerRoom, joinRoom, updateScore, RoomId, Room } from './rooms';
 
-const wss = new WebSocket.Server({ port: 1337 });
+const PORT = process.env.PORT ? Number(process.env.PORT) : 1337;
+const wss = new WebSocket.Server({ port: PORT });
 
 interface Message {
   event: string;
@@ -85,3 +86,5 @@ wss.on('connection', async ws => {
     }
   });
 });
+
+console.log(`klockbadis-backend listening on port: ${PORT}`);
