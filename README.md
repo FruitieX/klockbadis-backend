@@ -1,7 +1,17 @@
-# klockbadis-backend
+klockbadis-backend
+==================
+
 Simple backend for keeping track of scores in two-player matches.
 
-Connect to it using websockets, e.g. with [wscat](https://github.com/websockets/wscat):
+Setup
+-----
+
+1. `git clone https://github.com/FruitieX/klockbadis-backend.git`
+2. `cd klockbadis-backend`
+3. `npm install`
+4. `npm start`
+
+Now you can connect to it using websockets, e.g. with [wscat](https://github.com/websockets/wscat):
 
 ```
 wscat -c ws://localhost:1337 
