@@ -11,10 +11,12 @@ Setup
 3. `npm install`
 4. `npm start`
 
+You can change the listen port by supplying the `PORT` environment variable. Default is `1337`.
+
 Now you can connect to it using websockets, e.g. with [wscat](https://github.com/websockets/wscat):
 
 ```
-wscat -c ws://localhost:1337 
+wscat -c ws://localhost:1337
 ```
 
 Room setup
@@ -37,7 +39,7 @@ Player 1
      }
    }
    ```
-   
+
 2. Give PIN to player 2, wait until player 2 connects. Once that happens the following message is received:
 
    ```
@@ -54,7 +56,7 @@ Player 1
      }
    }
    ```
-   
+
 Player 2
 --------
 
@@ -72,7 +74,7 @@ Player 2
      }
    }
    ```
-   
+
 2. Get PIN from player 1, send the following message to join player 1's room:
 
    ```
@@ -83,7 +85,7 @@ Player 2
      }
    }
    ```
-   
+
 Sending updates to score
 ========================
 
