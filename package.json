@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines" : { "node" : ">=8.9.0" },
   "scripts": {
     "start": "npm run build:live",
     "build:live": "./node_modules/.bin/nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
