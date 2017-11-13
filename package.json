@@ -11,16 +11,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@types/lodash": "^4.14.83",
     "@types/node": "^8.0.50",
     "@types/ws": "^3.2.0",
+    "lodash": "^4.17.4",
     "nodemon": "^1.12.1",
     "ts-node": "^3.3.0",
-    "typescript": "^2.6.1"
-  },
-  "dependencies": {
-    "lodash": "^4.17.4",
+    "typescript": "^2.6.1",
     "ws": "^3.3.1"
   }
 }
